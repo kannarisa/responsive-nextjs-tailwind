@@ -1,7 +1,7 @@
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import AreaSection from "./Area/AreaSection";
-import { Partner } from "./partner-section/Partner";
+import { Partner } from "./components/partner-section/Partner";
 
 const workSans = Work_Sans({
   subsets: ["latin"],

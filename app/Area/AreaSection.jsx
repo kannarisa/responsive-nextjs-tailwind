@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
-import Welcome from "../welcome-section/Welcome";
+import Navbar from "../components/navbar/Navbar";
+import Welcome from "../components/welcome-section/Welcome";
 
 const AreaSection = () => {
   return (

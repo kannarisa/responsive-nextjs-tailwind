@@ -3,6 +3,7 @@ import "./globals.css";
 import AreaSection from "./Area/AreaSection";
 import { Partner } from "./components/partner-section/Partner";
 import Team from "./components/team-section/Team";
+import FooterSection from "./components/footer-section/FooterSection";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout() {
         <AreaSection></AreaSection>
         <Partner />
         <Team />
+        <FooterSection />
       </body>
     </html>
   );

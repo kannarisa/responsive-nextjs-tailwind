@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
       <body className={`${workSans.variable}`}>
         <AreaSection>
         </AreaSection>
-
         {children}
       </body>
     </html>

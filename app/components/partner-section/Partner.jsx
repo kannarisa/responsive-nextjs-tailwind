@@ -1,6 +1,8 @@
 import React from "react";
 import { workSans, crimsonText } from "../font/FontCall";
 import Image from "next/image";
+import PartnerSectionSecond from "./PartnerSectionSecond";
+import PartnerSectionThird from "./PartnerSectionThird";
 
 export const Partner = () => {
   return (
@@ -59,9 +61,11 @@ export const Partner = () => {
       </div>
       <div className="flex justify-center items-center">
         <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px]">
-            Learn More
+          Learn More
         </button>
       </div>
+      <PartnerSectionSecond />
+      <PartnerSectionThird />
     </div>
   );
 };

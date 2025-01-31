@@ -2,6 +2,7 @@ import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import AreaSection from "./Area/AreaSection";
 import { Partner } from "./components/partner-section/Partner";
+import Team from "./components/team-section/Team";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout() {
       <body className={`${workSans.variable}`}>
         <AreaSection></AreaSection>
         <Partner />
+        <Team />
       </body>
     </html>
   );

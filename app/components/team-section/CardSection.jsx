@@ -4,7 +4,7 @@ import { crimsonText } from "../font/FontCall";
 const CardSection = () => {
   return (
     <div className="pt-11">
-      <div className="flex justify-center items-center gap-11">
+      <div className="flex justify-center items-center gap-11 max-xl:gap-2 max-lg:grid max-lg:grid-cols-2 max-lg:gap-4 max-lg:place-items-center">
         <div className="bg-white w-[279px] h-[299px] shadow-lg">
           <div className="mx-10 py-5">
             <Image

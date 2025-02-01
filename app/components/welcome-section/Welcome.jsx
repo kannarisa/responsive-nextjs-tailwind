@@ -13,7 +13,7 @@ const Welcome = () => {
         </h1>
         <div className="py-4">
         <h2
-          className={`${crimsonText.className} font-bold text-white text-[40px] leading-[50px]`}
+          className={`${crimsonText.className} font-bold text-white text-[40px] leading-[50px] max-lg:text-[30px] max-lg:leading-[40px]`}
         >
           Lorem ipsum dolor sit amet consectetur
         </h2>

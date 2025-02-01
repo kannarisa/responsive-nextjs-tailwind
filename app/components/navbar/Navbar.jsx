@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { workSans } from "../font/FontCall";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -17,7 +18,7 @@ const Navbar = () => {
         <h1
           className={`${workSans.className} font-medium text-white text-[40px] leading-[50px]`}
         >
-          Start
+          <Link href="/">Start</Link>
         </h1>
       </div>
       <div className="justify-center items-center flex">
@@ -25,22 +26,22 @@ const Navbar = () => {
           <li
             className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
           >
-            Home
+            <Link href="/home">Home</Link>
           </li>
           <li
             className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
           >
-            Portfolio
+            <Link href="/portfolio">Portfolio</Link>
           </li>
           <li
             className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
           >
-            Services
+            <Link href="/services">Services</Link>
           </li>
           <li
             className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
           >
-            Contract
+            <Link href="/contact-us">Contract</Link>
           </li>
         </ul>
       </div>

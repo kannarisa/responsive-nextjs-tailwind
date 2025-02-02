@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { crimsonText } from "../font/FontCall";
+import { crimsonText } from "@/app/font/FontCall";
 
 const PartnerSectionSecond = () => {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { workSans, crimsonText } from "../font/FontCall";
+import { workSans, crimsonText } from "@/app/font/FontCall";
 
 const Welcome = () => {
   return (

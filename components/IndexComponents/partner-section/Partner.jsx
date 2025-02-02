@@ -1,5 +1,5 @@
 import React from "react";
-import { workSans, crimsonText } from "../font/FontCall";
+import { workSans, crimsonText } from "@/app/font/FontCall";
 import Image from "next/image";
 import PartnerSectionSecond from "./PartnerSectionSecond";
 import PartnerSectionThird from "./PartnerSectionThird";

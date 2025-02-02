@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import { workSans } from "../font/FontCall";
+import { workSans } from "@/app/font/FontCall";
 import Link from "next/link";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -30,7 +30,7 @@ const Navbar = () => {
 
         {/* Desktop Navbar (แสดงเมื่อจอใหญ่กว่า 768px) */}
         <nav className="hidden md:flex gap-[30px]">
-          <ul className="flex gap-[30px]">
+          <ul className="flex gap-[30px] bg-[#74C69D]">
             <li
               className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
             >

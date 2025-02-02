@@ -1,9 +1,6 @@
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
-import AreaSection from "./Area/AreaSection";
-import { Partner } from "./components/partner-section/Partner";
-import Team from "./components/team-section/Team";
-import FooterSection from "./components/footer-section/FooterSection";
+
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -16,14 +13,11 @@ export const metadata = {
   description: "This is for practice with Next.js and tailwindcss",
 };
 
-export default function RootLayout() {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${workSans.variable}`}>
-        <AreaSection></AreaSection>
-        <Partner />
-        <Team />
-        <FooterSection />
+        {children}
       </body>
     </html>
   );

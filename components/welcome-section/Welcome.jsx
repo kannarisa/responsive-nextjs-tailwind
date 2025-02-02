@@ -4,7 +4,7 @@ import { workSans, crimsonText } from "../font/FontCall";
 
 const Welcome = () => {
   return (
-    <div className="ml-[135px] mr-[130px] flex justify-between items-center">
+    <div className="ml-[135px] mr-[130px] flex justify-between items-center ">
       <div className="h-full w-[416px]">
         <h1
           className={`${workSans.className} font-bold text-white text-[16px] leading-[20px] tracking-[5px]`}

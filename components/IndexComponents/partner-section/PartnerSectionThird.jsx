@@ -4,7 +4,7 @@ import { crimsonText } from "@/app/font/FontCall";
 
 const PartnerSectionThird = () => {
   return (
-    <div className="flex justify-between flex-row-reverse">
+    <div className="flex justify-between flex-row-reverse max-md:flex-col max-md:items-center max-md:gap-[30px]">
       <div>
         <Image
           src="/assets/images/Developer.svg"
@@ -13,7 +13,7 @@ const PartnerSectionThird = () => {
           alt="developer"
         />
       </div>
-      <div className="flex flex-col h-full w-[470px] relative top-36 max-lg:top-20">
+      <div className="flex flex-col h-full w-[470px] relative top-36 max-lg:top-20 max-md:top-0 max-sm:max-w-[100%]">
         <h2
           className={`${crimsonText.className} font-bold text-black text-[40px] leading-[50px] max-lg:text-[30px] max-lg:leading-[40px]`}
         >

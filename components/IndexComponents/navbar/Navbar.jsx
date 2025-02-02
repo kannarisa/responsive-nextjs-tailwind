@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#74C69D]">
-      <div className="py-[35px] ml-[135px] mr-[130px] flex justify-between items-center ">
+      <div className="py-[35px] ml-[135px] mr-[130px] flex justify-between items-center max-md:mx-[40px] max-sm:mx-[20px]">
         {/* LOGO */}
         <div className="flex items-center">
           <Image
@@ -20,9 +20,10 @@ const Navbar = () => {
             width={70}
             height={48.31}
             alt="logo"
+            className="max-sm:w-11"
           />
           <h1
-            className={`${workSans.className} font-medium text-white text-[40px] leading-[50px] pl-[18px]`}
+            className={`${workSans.className} font-medium text-white text-[40px] leading-[50px] pl-[18px] max-sm:text-[30px] max-sm:leading-[37.5px] max-sm:pl-3`}
           >
             <Link href="/">Start</Link>
           </h1>
@@ -57,7 +58,7 @@ const Navbar = () => {
         {/* Mobile Hamburger Menu (แสดงเมื่อจอน้อยกว่า 768px) */}
         <nav className="md:hidden">
           <MenuIcon
-            className="text-white"
+            className="text-white max-sm:w-[34px] max-sm:h-[34px]"
             onClick={() => {
               setOpen(!open);
             }}
@@ -74,24 +75,24 @@ const Navbar = () => {
             }}
           ></AccordionSummary>
           <AccordionDetails>
-            <ul className="flex flex-col gap-[10px] items-center">
+            <ul className="flex flex-col gap-[30px] items-center">
               <li
-                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
+                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] max-md:text-[16px]`}
               >
                 <Link href="/home">Home</Link>
               </li>
               <li
-                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
+                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] max-md:text-[16px]`}
               >
                 <Link href="/portfolio">Portfolio</Link>
               </li>
               <li
-                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
+                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] max-md:text-[16px]`}
               >
                 <Link href="/services">Services</Link>
               </li>
               <li
-                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
+                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] max-md:text-[16px]`}
               >
                 <Link href="/contact-us">Contract</Link>
               </li>

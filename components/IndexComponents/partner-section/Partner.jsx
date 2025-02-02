@@ -6,7 +6,7 @@ import PartnerSectionThird from "./PartnerSectionThird";
 
 export const Partner = () => {
   return (
-    <div className="pt-[60px] pb-[73px] px-[140px]">
+    <div className="pt-[60px] pb-[73px] px-[140px] max-md:px-[40px] max-sm:px-[20px]">
       <div className="flex flex-col justify-center items-center px-[379px] max-xl:px-10">
         <div className="pb-4">
           <h1 className="font-bold text-[#74C69D] text-[16px] leading-[20px] tracking-[5px] text-center">
@@ -27,41 +27,41 @@ export const Partner = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between items-center py-14">
+      <div className="flex justify-between items-center py-14 max-md:flex-col max-md:items-center max-md:gap-[30px]">
         <Image
           src="/assets/logo/GoogleLogo.svg"
           width={152}
           height={50}
           alt="google"
-          className="max-lg:w-24"
+          className="max-lg:w-24 max-md:w-40"
         />
         <Image
           src="/assets/logo/MicrosoftLogo.svg"
           width={210}
           height={45}
           alt="microsoft"
-          className="max-lg:w-24"
+          className="max-lg:w-24 max-md:w-40"
         />
         <Image
           src="/assets/logo/AirbnbLogo.svg"
           width={160}
           height={50}
           alt="airbnb"
-          className="max-lg:w-24"
+          className="max-lg:w-24 max-md:w-40"
         />
         <Image
           src="/assets/logo/FacebookLogo.svg"
           width={196}
           height={38}
           alt="facebook"
-          className="max-lg:w-24"
+          className="max-lg:w-24 max-md:w-40"
         />
         <Image
           src="/assets/logo/SpotifyLogo.svg"
           width={166}
           height={50}
           alt="microsoft"
-          className="max-lg:w-24"
+          className="max-lg:w-24 max-md:w-40"
         />
       </div>
       <div className="flex justify-center items-center">

@@ -3,8 +3,8 @@ import React from "react";
 
 const FooterSection = () => {
   return (
-    <div className="h-[125px] bg-[#74C69D]">
-      <div className="flex pt-[51px] pb-[49px] px-[131px] justify-between items-center">
+    <div className="">
+      <div className="flex pt-[51px] pb-[49px] px-[131px] justify-between items-center max-md:px-[40px] max-md:flex-col max-md:py-[40px] max-md:gap-[20px] h-[125px] bg-[#74C69D] max-sm:px-[20px]">
         <div className="flex gap-5">
           <Image
             src="/assets/icon/FacebookIcon.svg"

@@ -3,6 +3,7 @@ import { workSans, crimsonText } from "@/app/font/FontCall";
 import Image from "next/image";
 import PartnerSectionSecond from "./PartnerSectionSecond";
 import PartnerSectionThird from "./PartnerSectionThird";
+import Link from "next/link";
 
 export const Partner = () => {
   return (
@@ -28,44 +29,74 @@ export const Partner = () => {
         </div>
       </div>
       <div className="flex justify-between items-center py-14 max-md:flex-col max-md:items-center max-md:gap-[30px]">
-        <Image
-          src="/assets/logo/GoogleLogo.svg"
-          width={152}
-          height={50}
-          alt="google"
-          className="max-lg:w-24 max-md:w-40"
-        />
-        <Image
-          src="/assets/logo/MicrosoftLogo.svg"
-          width={210}
-          height={45}
-          alt="microsoft"
-          className="max-lg:w-24 max-md:w-40"
-        />
-        <Image
-          src="/assets/logo/AirbnbLogo.svg"
-          width={160}
-          height={50}
-          alt="airbnb"
-          className="max-lg:w-24 max-md:w-40"
-        />
-        <Image
-          src="/assets/logo/FacebookLogo.svg"
-          width={196}
-          height={38}
-          alt="facebook"
-          className="max-lg:w-24 max-md:w-40"
-        />
-        <Image
-          src="/assets/logo/SpotifyLogo.svg"
-          width={166}
-          height={50}
-          alt="microsoft"
-          className="max-lg:w-24 max-md:w-40"
-        />
+        <Link
+          href="https://www.google.co.th/?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/assets/logo/GoogleLogo.svg"
+            width={152}
+            height={50}
+            alt="google"
+            className="max-lg:w-24 max-md:w-40 duration-300 hover:-translate-y-4"
+          />
+        </Link>
+        <Link
+          href="https://www.microsoft.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/assets/logo/MicrosoftLogo.svg"
+            width={210}
+            height={45}
+            alt="microsoft"
+            className="max-lg:w-24 max-md:w-40 duration-300 hover:-translate-y-4"
+          />
+        </Link>
+        <Link
+          href="https://www.airbnb.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/assets/logo/AirbnbLogo.svg"
+            width={160}
+            height={50}
+            alt="airbnb"
+            className="max-lg:w-24 max-md:w-40 duration-300 hover:-translate-y-4"
+          />
+        </Link>
+        <Link
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/assets/logo/FacebookLogo.svg"
+            width={196}
+            height={38}
+            alt="facebook"
+            className="max-lg:w-24 max-md:w-40 duration-300 hover:-translate-y-4"
+          />
+        </Link>
+        <Link
+          href="https://open.spotify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/assets/logo/SpotifyLogo.svg"
+            width={166}
+            height={50}
+            alt="microsoft"
+            className="max-lg:w-24 max-md:w-40 duration-300 hover:-translate-y-4"
+          />
+        </Link>
       </div>
       <div className="flex justify-center items-center">
-        <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px]">
+        <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] hover:bg-sky-800 transition-all duration-300">
           Learn More
         </button>
       </div>

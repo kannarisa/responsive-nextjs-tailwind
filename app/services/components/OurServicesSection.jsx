@@ -5,7 +5,7 @@ const OurServicesSection = () => {
   return (
     <div className="pb-[135px] px-[107px]">
       <div className=" flex justify-between items-center max-xl:flex-col max-xl:gap-12">
-        <div className="bg-white w-[339px] h-[542px] shadow-lg">
+        <div className="bg-white w-[339px] h-[542px] shadow-lg duration-300 hover:-translate-y-4">
           <div className="py-[46px] px-[30px]">
             <div>
               <h1 className="font-normal text-[15px] leading-[18.75px] flex justify-center items-center">
@@ -73,7 +73,7 @@ const OurServicesSection = () => {
                 </ul>
               </div>
               <div className="items-center justify-center flex">
-                <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] max-lg:w-[150px] max-lg:h-[40px] max-lg:text-[16px] max-lg:leading-[20px]">
+                <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] max-lg:w-[150px] max-lg:h-[40px] max-lg:text-[16px] max-lg:leading-[20px] hover:bg-sky-800 transition-all duration-300">
                   Learn More
                 </button>
               </div>
@@ -81,7 +81,7 @@ const OurServicesSection = () => {
           </div>
         </div>
 
-        <div className="bg-white w-[339px] h-[542px] shadow-lg">
+        <div className="bg-white w-[339px] h-[542px] shadow-lg duration-300 hover:-translate-y-4">
           <div className="py-[46px] px-[30px]">
             <div>
               <h1 className="font-normal text-[15px] leading-[18.75px] flex justify-center items-center">
@@ -156,7 +156,7 @@ const OurServicesSection = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white w-[339px] h-[542px] shadow-lg">
+        <div className="bg-white w-[339px] h-[542px] shadow-lg duration-300 hover:-translate-y-4">
           <div className="py-[46px] px-[30px]">
             <div>
               <h1 className="font-normal text-[15px] leading-[18.75px] flex justify-center items-center">

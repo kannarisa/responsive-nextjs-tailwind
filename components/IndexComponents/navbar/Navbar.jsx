@@ -35,22 +35,22 @@ const Navbar = () => {
         <nav className="hidden md:flex gap-[30px]">
           <ul className="flex gap-[30px] bg-[#74C69D]">
             <li
-              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
+              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
             >
               <Link href="/">Home</Link>
             </li>
             <li
-              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
+              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
             >
               <Link href="/portfolio">Portfolio</Link>
             </li>
             <li
-              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
+              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
             >
               <Link href="/services">Services</Link>
             </li>
             <li
-              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
+              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
             >
               <Link href="/contact-us">Contract</Link>
             </li>

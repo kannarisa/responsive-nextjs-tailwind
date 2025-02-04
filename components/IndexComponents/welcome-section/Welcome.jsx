@@ -26,7 +26,7 @@ const Welcome = () => {
             esse officia.
           </p>
           <div className="pt-6">
-            <button className="bg-white w-[170px] h-[48px] font-normal text-[20px] leading-[25px] items-center rounded-lg">
+            <button className="bg-white w-[170px] h-[48px] font-normal text-[20px] leading-[25px] items-center rounded-lg hover:bg-gray-200 transition-all duration-300">
               Explore
             </button>
           </div>

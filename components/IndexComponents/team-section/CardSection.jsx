@@ -5,7 +5,7 @@ const CardSection = () => {
   return (
     <div className="pt-11">
       <div className="flex justify-center items-center gap-11 max-xl:gap-2 max-lg:grid max-lg:grid-cols-2 max-lg:gap-4 max-lg:place-items-center max-md:grid-cols-1">
-        <div className="bg-white w-[279px] h-[299px] shadow-lg">
+        <div className="bg-white w-[279px] h-[299px] shadow-lg duration-300 hover:-translate-y-4">
           <div className="mx-10 py-5">
             <Image
               src="/assets/images/Peg.svg"
@@ -26,7 +26,7 @@ const CardSection = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white w-[279px] h-[299px] shadow-lg">
+        <div className="bg-white w-[279px] h-[299px] shadow-lg duration-300 hover:-translate-y-4">
           <div className="mx-10 py-5">
             <Image
               src="/assets/images/richard.svg"
@@ -47,7 +47,7 @@ const CardSection = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white w-[279px] h-[299px] shadow-lg">
+        <div className="bg-white w-[279px] h-[299px] shadow-lg duration-300 hover:-translate-y-4">
           <div className="mx-10 py-5">
             <Image
               src="/assets/images/Alexandra.svg"
@@ -68,7 +68,7 @@ const CardSection = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white w-[279px] h-[299px] shadow-lg">
+        <div className="bg-white w-[279px] h-[299px] shadow-lg duration-300 hover:-translate-y-4">
           <div className="mx-10 py-5">
             <Image
               src="/assets/images/Janet.svg"
@@ -91,7 +91,7 @@ const CardSection = () => {
         </div>
       </div>
       <div className="flex justify-center items-center pt-11">
-        <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px]">
+        <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] hover:bg-sky-800 transition-all duration-300">
           View Team
         </button>
       </div>

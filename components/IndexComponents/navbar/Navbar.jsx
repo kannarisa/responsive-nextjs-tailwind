@@ -15,13 +15,15 @@ const Navbar = () => {
       <div className="py-[35px] ml-[135px] mr-[130px] flex justify-between items-center max-md:mx-[40px] max-sm:mx-[20px]">
         {/* LOGO */}
         <div className="flex items-center">
-          <Image
-            src="/assets/logo/logo-start.svg"
-            width={70}
-            height={48.31}
-            alt="logo"
-            className="max-sm:w-11"
-          />
+          <Link href="/">
+            <Image
+              src="/assets/logo/logo-start.svg"
+              width={70}
+              height={48.31}
+              alt="logo"
+              className="max-sm:w-11"
+            />
+          </Link>
           <h1
             className={`${workSans.className} font-medium text-white text-[40px] leading-[50px] pl-[18px] max-sm:text-[30px] max-sm:leading-[37.5px] max-sm:pl-3`}
           >

@@ -35,7 +35,7 @@ const Navbar = () => {
             <li
               className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}
             >
-              <Link href="/home">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li
               className={`${workSans.className} font-normal text-white text-[20px] leading-[25px]`}

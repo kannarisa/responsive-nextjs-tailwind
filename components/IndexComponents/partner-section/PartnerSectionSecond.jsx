@@ -28,7 +28,7 @@ const PartnerSectionSecond = () => {
 
         <div className="pt-6">
           <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] max-lg:w-[150px] max-lg:h-[40px] max-lg:text-[16px] max-lg:leading-[20px]">
-            Explore
+            Learn More
           </button>
         </div>
       </div>

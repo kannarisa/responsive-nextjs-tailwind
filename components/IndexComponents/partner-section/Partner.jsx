@@ -4,6 +4,7 @@ import Image from "next/image";
 import PartnerSectionSecond from "./PartnerSectionSecond";
 import PartnerSectionThird from "./PartnerSectionThird";
 import Link from "next/link";
+import Button from "@/components/ui/Button";
 
 export const Partner = () => {
   return (
@@ -96,9 +97,7 @@ export const Partner = () => {
         </Link>
       </div>
       <div className="flex justify-center items-center">
-        <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] hover:bg-sky-800 transition-all duration-300">
-          Learn More
-        </button>
+        <Button text="Learn More"/>
       </div>
       <PartnerSectionSecond />
       <PartnerSectionThird />

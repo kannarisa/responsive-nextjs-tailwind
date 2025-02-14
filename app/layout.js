@@ -1,7 +1,8 @@
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
-import FooterSection from "@/components/IndexComponents/footer-section/FooterSection";
-import Navbar from "@/components/IndexComponents/navbar/Navbar";
+import Navbar from "@/components/layout/Navbar";
+import FooterSection from "@/components/layout/FooterSection";
+
 
 export const metadata = {
   title: "Responsive Web",

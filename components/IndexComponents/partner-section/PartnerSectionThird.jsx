@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { crimsonText } from "@/app/font/FontCall";
+import Button from "@/components/ui/Button";
 
 const PartnerSectionThird = () => {
   return (
@@ -27,9 +28,7 @@ const PartnerSectionThird = () => {
         </p>
 
         <div className="pt-6">
-          <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] max-lg:w-[150px] max-lg:h-[40px] max-lg:text-[16px] max-lg:leading-[20px] hover:bg-sky-800 transition-all duration-300">
-            Learn More
-          </button>
+          <Button text="Learn More"/>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import Image from "next/image";
 import React from "react";
 
@@ -73,9 +74,7 @@ const OurServicesSection = () => {
                 </ul>
               </div>
               <div className="items-center justify-center flex">
-                <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] max-lg:w-[150px] max-lg:h-[40px] max-lg:text-[16px] max-lg:leading-[20px] hover:bg-sky-800 transition-all duration-300">
-                  Learn More
-                </button>
+                <Button text="Learn More" />
               </div>
             </div>
           </div>
@@ -149,9 +148,7 @@ const OurServicesSection = () => {
                 </ul>
               </div>
               <div className="items-center justify-center flex">
-                <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] max-lg:w-[150px] max-lg:h-[40px] max-lg:text-[16px] max-lg:leading-[20px]">
-                  Learn More
-                </button>
+                <Button text="Learn More" />
               </div>
             </div>
           </div>
@@ -224,9 +221,7 @@ const OurServicesSection = () => {
                 </ul>
               </div>
               <div className="items-center justify-center flex">
-                <button className="bg-[#212529] text-white text-center w-[170px] h-[48px] rounded-md font-normal text-[20px] leading-[25px] max-lg:w-[150px] max-lg:h-[40px] max-lg:text-[16px] max-lg:leading-[20px]">
-                  Learn More
-                </button>
+                <Button text="Learn More" />
               </div>
             </div>
           </div>

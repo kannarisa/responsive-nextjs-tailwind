@@ -5,7 +5,7 @@ import React from "react";
 const OurServicesSection = () => {
   return (
     <div className="pb-[135px] px-[107px]">
-      <div className=" flex justify-between items-center max-xl:flex-col max-xl:gap-12">
+      <div className=" flex justify-center gap-[105px] items-center max-xl:flex-col max-xl:gap-12">
         <div className="bg-white w-[339px] h-[542px] shadow-lg duration-300 hover:-translate-y-4">
           <div className="py-[46px] px-[30px]">
             <div>

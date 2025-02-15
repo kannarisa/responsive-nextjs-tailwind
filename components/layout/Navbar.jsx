@@ -24,6 +24,7 @@ const Navbar = () => {
               className="max-sm:w-11"
             />
           </Link>
+
           <h1
             className={`${workSans.className} font-medium text-white text-[40px] leading-[50px] pl-[18px] max-sm:text-[30px] max-sm:leading-[37.5px] max-sm:pl-3`}
           >

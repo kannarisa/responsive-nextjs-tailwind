@@ -1,33 +1,21 @@
 import React from "react";
-import { workSans, crimsonText } from "@/app/font/FontCall";
 import Image from "next/image";
 import PartnerSectionSecond from "./PartnerSectionSecond";
 import PartnerSectionThird from "./PartnerSectionThird";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import TextBox from "@/components/ui/TextBox";
 
 export const Partner = () => {
   return (
     <div className="pt-[60px] pb-[73px] px-[140px] max-md:px-[40px] max-sm:px-[20px]">
       <div className="flex flex-col justify-center items-center px-[379px] max-xl:px-10">
-        <div className="pb-4">
-          <h1 className="font-bold text-[#74C69D] text-[16px] leading-[20px] tracking-[5px] text-center">
-            PARTNER
-          </h1>
-        </div>
-        <div className="pb-4">
-          <h2
-            className={`${crimsonText.className} font-bold text-black text-[40px] leading-[50px] text-center max-lg:text-[30px] max-lg:leading-[40px]`}
-          >
-            Lorem Ipsum Dolor
-          </h2>
-        </div>
-        <div>
-          <p className="font-normal text-black text-[20px] leading-[25px] text-center max-xl:text-[16px] max-xl:leading-[20px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            excepturi totam sapiente ratione optio vitae?
-          </p>
-        </div>
+        <TextBox
+          topic="PARTNER"
+          supTopic="Lorem Ipsum Dolor"
+          message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            excepturi totam sapiente ratione optio vitae?"
+        />
       </div>
       <div className="flex justify-between items-center py-14 max-md:flex-col max-md:items-center max-md:gap-[30px]">
         <Link
@@ -97,7 +85,7 @@ export const Partner = () => {
         </Link>
       </div>
       <div className="flex justify-center items-center">
-        <Button text="Learn More"/>
+        <Button text="Learn More" />
       </div>
       <PartnerSectionSecond />
       <PartnerSectionThird />

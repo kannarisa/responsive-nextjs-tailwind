@@ -12,52 +12,53 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#74C69D]">
-      <div className="py-[35px] ml-[135px] mr-[130px] flex justify-between items-center max-md:mx-[40px] max-sm:mx-[20px]">
+      <div className="py-[35px] ml-[135px] mr-[130px] items-center max-md:mx-[40px] max-sm:mx-[20px]">
         {/* LOGO */}
-        <div className="flex items-center">
-          <Link href="/">
-            <Image
-              src="/assets/logo/logo-start.svg"
-              width={70}
-              height={48.31}
-              alt="logo"
-              className="max-sm:w-11"
-            />
-          </Link>
+        <nav className="flex justify-center items-center mx-auto">
+          <div className="flex mr-auto">
+            <Link href="/">
+              <Image
+                src="/assets/logo/logo-start.svg"
+                width={70}
+                height={48.31}
+                alt="logo"
+                className="max-sm:w-11"
+              />
+            </Link>
 
-          <h1
-            className={`${workSans.className} font-medium text-white text-[40px] leading-[50px] pl-[18px] max-sm:text-[30px] max-sm:leading-[37.5px] max-sm:pl-3`}
-          >
-            <Link href="/">Start</Link>
-          </h1>
-        </div>
+            <h1
+              className={`${workSans.className}  font-medium text-white text-[40px] leading-[50px] pl-[18px] max-sm:text-[30px] max-sm:leading-[37.5px] max-sm:pl-3`}
+            >
+              <Link href="/">Start</Link>
+            </h1>
+          </div>
 
-        {/* Desktop Navbar (แสดงเมื่อจอใหญ่กว่า 768px) */}
-        <nav className="hidden md:flex gap-[30px]">
-          <ul className="flex gap-[30px] bg-[#74C69D]">
-            <li
-              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
-            >
-              <Link href="/">Home</Link>
-            </li>
-            <li
-              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
-            >
-              <Link href="/portfolio">Portfolio</Link>
-            </li>
-            <li
-              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
-            >
-              <Link href="/services">Services</Link>
-            </li>
-            <li
-              className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
-            >
-              <Link href="/contact-us">Contract</Link>
-            </li>
-          </ul>
+          {/* Desktop Navbar (แสดงเมื่อจอใหญ่กว่า 768px) */}
+          <nav className="hidden md:flex gap-[30px]">
+            <ul className="flex gap-[30px] bg-[#74C69D]">
+              <li
+                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
+              >
+                <Link href="/">Home</Link>
+              </li>
+              <li
+                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
+              >
+                <Link href="/portfolio">Portfolio</Link>
+              </li>
+              <li
+                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
+              >
+                <Link href="/services">Services</Link>
+              </li>
+              <li
+                className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] duration-200 hover:scale-[1.1]`}
+              >
+                <Link href="/contact-us">Contact</Link>
+              </li>
+            </ul>
+          </nav>
         </nav>
-
         {/* Mobile Hamburger Menu (แสดงเมื่อจอน้อยกว่า 768px) */}
         <nav className="md:hidden">
           <MenuIcon
@@ -97,7 +98,7 @@ const Navbar = () => {
               <li
                 className={`${workSans.className} font-normal text-white text-[20px] leading-[25px] max-md:text-[16px]`}
               >
-                <Link href="/contact-us">Contract</Link>
+                <Link href="/contact-us">Contact</Link>
               </li>
             </ul>
           </AccordionDetails>

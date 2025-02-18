@@ -1,5 +1,4 @@
 import React from "react";
-import { crimsonText } from "@/app/font/FontCall";
 import TextBox from "@/components/ui/TextBox";
 
 const ContactUs = () => {

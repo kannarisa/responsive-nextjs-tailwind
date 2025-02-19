@@ -3,27 +3,50 @@
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useState } from "react";
 import MapContact from "./MapContact";
-
-const formSchema = yup.object({
-  name: yup.string().required("Name must be at least 2 characters"),
-  email: yup.string().email("Invalid email").required("Please Enter email"),
-  message: yup.string().required("Message must be at least 10 characters"),
-});
+import { useState } from "react";
 
 const Inform = () => {
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+
+  // Schema Validation
+  const formSchema = yup.object({
+    name: yup.string().required("Name must be at least 2 characters"),
+    email: yup.string().email("Invalid email").required("Please Enter email"),
+    message: yup.string().required("Message must be at least 10 characters"),
+  });
+
+  // ใช้ React Hook Form
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({
     resolver: yupResolver(formSchema),
   });
 
   const onSubmit = async (data) => {
-    console.log("Form Data:", data);
-    alert("Form submitted successfully!");
+    setLoading(true);
+    setSuccessMessage("");
+
+    try {
+      const res = await fetch("https://api.brevo.com/v3/smtp/email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error("Failed to send email");
+
+      setSuccessMessage("Email sent successfully!");
+      reset(); // เคลียร์ฟอร์มหลังจากส่งสำเร็จ
+    } catch (error) {
+      setSuccessMessage("Failed to send email");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -93,10 +116,22 @@ const Inform = () => {
             <button
               className="bg-[#212529] text-white text-center w-full h-[48px] rounded-md font-normal text-[20px] leading-[25px]  max-lg:h-[40px] max-lg:text-[16px] max-lg:leading-[20px] hover:bg-sky-800 transition-all duration-300"
               type="Submit"
+              disabled={loading}
             >
-              Submit
+              {loading ? "Sending..." : "Submit"}
             </button>
           </div>
+          {successMessage && (
+            <p
+              className={`text-center mt-2 ${
+                successMessage.includes("successfully")
+                  ? "text-green-500"
+                  : "text-red-500"
+              }`}
+            >
+              {successMessage}
+            </p>
+          )}
         </form>
         <MapContact />
       </div>

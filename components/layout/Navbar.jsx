@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#74C69D]">
-      <div className="py-[35px] ml-[135px] mr-[130px] flex justify-between items-center max-md:mx-[40px] max-sm:mx-[20px]">
+      <div className="py-[35px] ml-[135px] mr-[130px] flex justify-between items-center max-md:mx-[40px] max-sm:mx-[20px] 2xl:mx-64">
         {/* LOGO */}
 
         <div className="flex items-center">

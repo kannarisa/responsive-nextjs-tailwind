@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 
 const PartnerSectionThird = () => {
   return (
-    <div className="flex justify-between flex-row-reverse max-md:flex-col max-md:items-center max-md:gap-[30px]">
+    <div className="flex justify-between flex-row-reverse max-md:flex-col max-md:items-center max-md:gap-[30px] 2xl:mx-32">
       <div>
         <Image
           src="/assets/images/Developer.svg"

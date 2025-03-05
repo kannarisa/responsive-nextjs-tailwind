@@ -5,7 +5,7 @@ import { workSans, crimsonText } from "@/app/font/FontCall";
 const Welcome = () => {
   return (
     <div className=" bg-[#74C69D]">
-      <div className="ml-[135px] mr-[130px] pb-20 flex justify-between items-center max-md:mx-[40px] max-md:flex-col-reverse max-md:gap-[30px] max-sm:mx-[20px] w-auto">
+      <div className="ml-[135px] mr-[130px] pb-20 flex justify-between items-center max-md:mx-[40px] max-md:flex-col-reverse max-md:gap-[30px] max-sm:mx-[20px] w-auto 2xl:mx-64">
         <div className="h-full w-[416px] max-sm:max-w-[100%]">
           <h1
             className={`${workSans.className} font-bold text-white text-[16px] leading-[20px] tracking-[5px]`}

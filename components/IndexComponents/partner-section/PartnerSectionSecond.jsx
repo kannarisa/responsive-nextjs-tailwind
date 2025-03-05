@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 
 const PartnerSectionSecond = () => {
   return (
-    <div className="py-[73px] flex justify-between max-md:flex-col max-md:items-center max-md:gap-[30px] max-md:py-8">
+    <div className="py-[73px] flex justify-between max-md:flex-col max-md:items-center max-md:gap-[30px] max-md:py-8 2xl:mx-32">
       <div>
         <Image
           src="/assets/images/ShareOpinion.svg"
